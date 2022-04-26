@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def fizzbuzz():
     for fiz in range(51):
         if fiz % 3 == 0 and fiz % 5 == 0:
