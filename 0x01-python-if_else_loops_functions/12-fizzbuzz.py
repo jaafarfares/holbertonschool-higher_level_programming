@@ -3,12 +3,12 @@ def fizzbuzz():
     for count in range(100):
         count += 1
         if count % 3 == 0 and count % 5 == 0:
-            print("fizzbuzz ", end="")
+            print("fizzbuzz", end=" ")
             continue
         elif count % 3 == 0:
-            print("fizz ", end="")
+            print("fizz", end=" ")
             continue
         elif count % 5 == 0:
-            print("buzz ", end="")
+            print("buzz", end=" ")
             continue
-        print(count, " ", end="")
+        print("{} ".format(count), end="")
