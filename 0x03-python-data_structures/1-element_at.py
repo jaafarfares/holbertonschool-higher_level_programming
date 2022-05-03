@@ -4,4 +4,4 @@ def element_at(my_lis, idx):
     i = idx
     if i < 0 or i > (len(a) - 1):
         return None
-    print(a[i])
+    return(a[i])
