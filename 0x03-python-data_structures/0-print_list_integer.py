@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-a = [1, 2, 3, 4, 5]
-for s in a:
-    print("{:d}".format(s))
+def print_list_integer(my_list=[]):
+    for s in range(len(my_list)):
+        print("{:d}".format(my_list[s]))
