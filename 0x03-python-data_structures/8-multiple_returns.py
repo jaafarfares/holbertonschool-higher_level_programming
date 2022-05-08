@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    length = len(sentence)
-    if length == 0:
-        tuplee = NULL
+    if sentence != "":
+        return len(sentence), sentence[0]
     else:
-        tuplee = length, sentence[0]
-    return tuplee
+        return len(sentence), None
