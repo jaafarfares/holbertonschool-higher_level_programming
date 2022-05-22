@@ -1,4 +1,9 @@
-""" add_integer module """
+the add_integer module
+===========================================
+
+Using add_integer
+
+-------------------
 
 Import add_integer from 0-add_integer
 
