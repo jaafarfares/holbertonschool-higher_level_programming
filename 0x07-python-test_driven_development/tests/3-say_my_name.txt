@@ -1,0 +1,17 @@
+this is a test file for the function 'say_my_name'
+
+import say_my_name from 3-say_my_name
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+all possible tests:
+    
+    >>> say_my_name("jaafar", "fares")
+    My name is jaafar fares
+    >>> say_my_name("holberton", "school")
+    My name is holberton school
+    >>> say_my_name(3, "school")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+    >>> say_my_name("school", 69)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
