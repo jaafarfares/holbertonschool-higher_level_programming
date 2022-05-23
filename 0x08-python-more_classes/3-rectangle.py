@@ -49,4 +49,6 @@ class Rectangle():
 
     def __str__(self):
         """ print the rectangle area with the charchter '#' """
+        if self.width == 0 or self.height == 0:
+            return 0
         return '\n'.join('#' * self.width for _ in range(self.height))
