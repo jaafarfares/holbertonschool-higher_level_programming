@@ -6,9 +6,9 @@ class Rectangle():
     number_of_instances = 0
     """ empty class rectangle"""
     def __init__(self, width=0, height=0):
-        Rectangle.number_of_instances += 1
         self.__width = width
         self.__height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -48,8 +48,7 @@ class Rectangle():
         """return the rectangle perimiter"""
         if self.width == 0 or self.height == 0:
             return ""
-        else:
-            return 2*(self.__height + self.__width)
+        return 2*(self.__height + self.__width)
 
     def __str__(self):
         """ print the rectangle area with the charchter '#' """
@@ -62,6 +61,10 @@ class Rectangle():
         return f'Rectangle({self.width}, {self.height})'
 
     def __del__(self):
-        Rectangle.number_of_instances -= 1
         """print a message when an instance of Rectangle is deleted"""
+        print("Bye rectangle...")
+
+    def __del__(self):
+        """print a message when an instance of Rectangle is deleted"""
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
