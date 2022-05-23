@@ -5,6 +5,7 @@
 class Rectangle():
     number_of_instances = 0
     """ empty class rectangle"""
+    
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
