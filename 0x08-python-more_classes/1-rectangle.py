@@ -1,39 +1,38 @@
 #!/usr/bin/python3
-"""a python program that defines a rectangle"""
+'''a python programe to define a rectangle'''
 
 
-class Rectangle():
-    """ empty class rectangle"""
+class Rectangle:
+    '''declare the class rectangle'''
     def __init__(self, width=0, height=0):
-        """ the function arguments """
-        self.__height = height
-        self.__width = width
+        '''function arguments'''
+        self.height = height
+        self.width = width
 
     @property
     def width(self):
-        """width property """
+        '''a class method'''
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ width setter"""
+        '''a class method'''
         if type(value) is not int:
-            raise(TypeError("width must be an integer"))
-        elif value < 0:
-            raise(ValueError("width must be >= 0"))
-        else:
-            self.__width = value
+            raise TypeError("width must be an integer")
+        if value < 0:
+            raise ValueError("width must be >= 0")
+        self.__width = value
 
     @property
     def height(self):
-        """height property"""
+        '''a class method'''
         return self.__height
 
     @height.setter
     def height(self, value):
-        """height setter """
+        '''a class method'''
         if type(value) is not int:
-            raise(TypeError("height must be an integer"))
-        elif value < 0:
-            raise(ValueError("height must be >= 0"))
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
         self.__height = value
