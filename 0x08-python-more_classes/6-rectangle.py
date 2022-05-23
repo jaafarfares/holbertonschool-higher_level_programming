@@ -54,8 +54,13 @@ class Rectangle():
         """ print the rectangle area with the charchter '#' """
         if self.width == 0 or self.height == 0:
             return ""
-        return '\n'.join('#' * self.width for _ in range(self.height))
-
+        num = ""
+        for i in range(self.__height):
+            num += "#" * self.__width
+            if i != self.__height - 1:
+                num += "\n"
+        return num
+    
     def __repr__(self):
         """ using the repr method"""
         return f'Rectangle({self.width}, {self.height})'
