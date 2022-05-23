@@ -45,7 +45,7 @@ class Rectangle():
         """return the rectangle perimiter"""
         if self.width == 0 or self.height == 0:
             return 0
-            return 2*(self.__height + self.__width)
+        return 2*(self.__height + self.__width)
 
     def __str__(self):
         """ print the rectangle area with the charchter '#' """
