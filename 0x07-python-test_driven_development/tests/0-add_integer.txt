@@ -13,9 +13,9 @@ all possible tests:
 
     >>> add_integer(1, 2)
     3
-    >>> add_integer(2, 2)
+    >>> add_integer(2, 2.3)
     4
-    >>> add_integer(6, 7)
+    >>> add_integer(6.0, 7.0)
     13
     >>> add_integer(-6, -3)
     -9
@@ -29,3 +29,6 @@ all possible tests:
     TypeError: b must be an integer
     >>> add_integer(250.3, 2)
     252
+    >>> add_integer("jaafar", "fares")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
