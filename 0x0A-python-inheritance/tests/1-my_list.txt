@@ -32,3 +32,7 @@ all possible tests:
     ['J', 'a', 'a', 'f', 'a', 'r']
     >>> my_list.print_sorted()
     ['J', 'a', 'a', 'a', 'f', 'r']
+    
+    >>> new_l = MyList()
+    >>> new_l.print_sorted()
+    []
