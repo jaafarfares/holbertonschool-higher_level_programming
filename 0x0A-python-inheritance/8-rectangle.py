@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""inherit  a class
-from another function"""
+"""inherit  a class from another function"""
 
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
