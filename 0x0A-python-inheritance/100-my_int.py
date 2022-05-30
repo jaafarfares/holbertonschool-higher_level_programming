@@ -3,8 +3,9 @@
 
 
 class MyInt(int):
-    def __eq__(self, first):
-        return super().__ne__(first)
+    
+    def __eq__(self, i):
+        return super().__ne__(i)
 
-    def __eq__(self, first):
-        return super().__ne__(first)
+    def __ne__(self, i):
+        return super().__eq__(i)
