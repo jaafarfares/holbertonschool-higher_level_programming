@@ -3,9 +3,9 @@
 
 
 class MyInt(int):
-    
-    def __eq__(self, i):
-        return super().__ne__(i)
+    """ a class int """
+    def __eq__(self, init):
+        return super().__ne__(init)
 
-    def __ne__(self, i):
-        return super().__eq__(i)
+    def __ne__(self, init):
+        return super().__eq__(init)
