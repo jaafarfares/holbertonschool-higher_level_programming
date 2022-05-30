@@ -11,6 +11,8 @@ Import MyList from 1-my_list
 
 all possible tests:
     >>> my_list = MyList()
+    >>> my_list
+    []
     >>> my_list.append(1)
     >>> my_list.append(4)
     >>> my_list.append(2)
