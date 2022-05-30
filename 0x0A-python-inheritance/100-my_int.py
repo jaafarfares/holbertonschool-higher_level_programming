@@ -3,4 +3,8 @@
 
 
 class MyInt(int):
-    pass
+    def __eq__(self, first):
+        return super().__ne__(first)
+
+    def __eq__(self, first):
+        return super().__ne__(first)
