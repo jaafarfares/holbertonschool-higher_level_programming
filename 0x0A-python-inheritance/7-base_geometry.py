@@ -14,5 +14,6 @@ class BaseGeometry:
             raise ValueError(name + "<name> must be greater than 0")
 
     def area(self):
+        
         raise(Exception("area() is not implemented"))
 
