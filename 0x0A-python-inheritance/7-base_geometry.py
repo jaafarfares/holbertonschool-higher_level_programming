@@ -5,14 +5,14 @@
 
 class BaseGeometry:
     """the method parameter"""
-    def area(self):
-        raise(Exception("area() is not implemented"))
-
-    pass
+    
     def integer_validator(self, name, value):
     """ assgin the value"""
     if type(name) is int:
         raise exception(name + "<name> must be an integer")
     if value <= 0:
         raise ValueError(name + "<name> must be greater than 0")
-    pass
+
+    def area(self):
+        raise(Exception("area() is not implemented"))
+
