@@ -6,7 +6,7 @@ number of characters written:"""
 
 def write_file(filename="", text=""):
     """the function parameter to open the file and write the string"""
-    with open('my_first_file.txt', 'w', encoding='utf-8') as f:
+    with open(filename, 'w', encoding='utf-8') as f:
         s = str(text)
         f.write(s)
         return len(text)
