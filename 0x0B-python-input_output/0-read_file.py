@@ -6,6 +6,6 @@
 def read_file(filename=""):
     """open the file a read the content """
 
-    with open('my_file_0.txt') as f:
+    with open(filename) as f:
 
         print(f.read(), end="")
