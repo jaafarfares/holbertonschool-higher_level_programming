@@ -2,7 +2,7 @@
 """Write a class Student that defines a student by"""
 
 
-class Stusent:
+class Student:
 
     def __init__(self, first_name, last_name, age):
         """ the method parameter"""
