@@ -5,34 +5,48 @@ from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
+    """Class describing a square.
+    Public instance methds Inherits from Rectangle.
+    """
+
     def __init__(self, size, x=0, y=0, id=None):
+        """Initializes a Square instance."""
         self.size = size
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
-        """
-        __str__ method
-        """
-        return "[Rectangle] ({}) {}/{} - {}".format(
-            self.id, self.x, self.y, self.width)
+        """Returns a string representation of a Square instance."""
+
+        s = "[Square] ({}) {}/{} - {}".format(
+            self.id, self.x, self.y, self.__width)
+        return s
 
     @property
     def size(self):
-        """ size getter """
-        return self.width
+        """Retrieves the size attribute."""
+
+        return self.__width
 
     @size.setter
     def size(self, value):
-        """ size setter """
+        """Sets the size attribute."""
+
         if type(value) is not int:
-            raise TypeError("size must be an integer")
-        if value < 0:
-            raise ValueError("size must be > 0")
-        else:
-            self.__width = value
-            self.__height = value
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
+        self.__width = value
+        self.__height = value
 
     def update(self, *args, **kwargs):
+        """Updates attributes of an instance.
+        Args:
+            - id attribute
+            - size attribute
+            - x attribute
+            - y attribute
+        """
+
         if args is not None and len(args) != 0:
             if len(args) >= 1:
                 if type(args[0]) != int and args[0] is not None:
@@ -56,3 +70,9 @@ class Square(Rectangle):
                     self.x = value
                 if key == "y":
                     self.y = value
+
+    def to_dictionary(self):
+        """Returns the dictionary representation of a Square."""
+
+        my_dict = {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
+        return my_dict
