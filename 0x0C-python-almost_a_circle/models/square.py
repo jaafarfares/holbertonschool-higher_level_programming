@@ -55,4 +55,4 @@ class Square(Rectangle):
                 if key == "x":
                     self.x = value
                 if key == "y":
-                    self.y = 
+                    self.y = value
