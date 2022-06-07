@@ -22,6 +22,3 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
-
-    def save_to_file(cls, list_objs):
-        pass
