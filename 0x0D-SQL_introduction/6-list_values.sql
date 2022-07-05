@@ -1,2 +1,2 @@
 -- 
-SELECT * FROM tableName;
+SELECT * FROM first_table;
