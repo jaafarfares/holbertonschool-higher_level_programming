@@ -1,3 +1,2 @@
 -- compute avreage
-SELECT AVG(score) AS "avreage"
-FROM second_table;
+SELECT AVG(score) AS 'average' FROM second_table;
