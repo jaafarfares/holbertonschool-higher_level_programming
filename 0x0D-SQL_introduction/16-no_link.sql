@@ -1,4 +1,4 @@
 --
-SELECT score, name ORDER BY ASC
+SELECT score, name ORDER BY score ASC
 FROM first_table
 WHERE name != "";
