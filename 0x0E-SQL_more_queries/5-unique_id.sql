@@ -1,6 +1,6 @@
--- script that creates the table with id not null
+-- script that creates the table with a unique id
 CREATE TABLE IF NOT EXISTS unique_id
 (
-    id  INT NEWID(1),
+    id INT DEFAULT 1 UNIQU,
     name VARCHAR(256)
 );
