@@ -9,12 +9,11 @@ module.exports = class Rectangle {
 
   print () {
     let stringRectangle = '';
-    for (let i = 1; i <= this.height; i++) {
-      for (let j = 1; j <= this.width; j++) {
-        stringRectangle += 'X';
-      }
-      stringRectangle += '\n';
+    for (let i = 0; i < this.width; i++) {
+      stringRectangle += 'X';
     }
-    console.log(stringRectangle);
+    for (let j = 0; j < this.height; j++) {
+      console.log(stringRectangle);
+    }
   }
 };
