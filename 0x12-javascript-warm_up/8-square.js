@@ -3,11 +3,11 @@ const { argv } = require('process');
 if (isNaN(argv[2])) {
   console.log('Missing size');
 } else {
-  let s = '';
-  for (let i = 0; i < argv[2]; i++) {
-    s += 'x';
+  let square = '';
+  for (let i = 0; i < (argv[2]); i++) {
+    square += 'X';
   }
-  for (let a = 0; a < argv[2]; a++) {
-    console.log(s);
+  for (let j = 0; j < (argv[2]); j++) {
+    console.log(square);
   }
 }
