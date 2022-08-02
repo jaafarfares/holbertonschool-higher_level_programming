@@ -1,5 +1,4 @@
 #!/usr/bin/node
-const { argv } = require('process');
 
 function add (a, b) {
   const sum = a + b;
