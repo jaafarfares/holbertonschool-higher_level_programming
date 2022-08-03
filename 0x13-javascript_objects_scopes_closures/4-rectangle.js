@@ -16,4 +16,16 @@ module.exports = class Rectangle {
       console.log(stringRectangle);
     }
   }
+
+  double () {
+    this.height *= 2;
+    this.width *= 2;
+  }
+
+  rotate () {
+    const h = this.height;
+    const w = this.width;
+    this.width = h;
+    this.height = w;
+  }
 };
