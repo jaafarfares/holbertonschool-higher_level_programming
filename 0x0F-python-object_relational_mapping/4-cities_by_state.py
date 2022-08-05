@@ -13,8 +13,8 @@ if __name__ == "__main__":
     """ i didnt declare the *host and the *port arguments
     cuz they will be ther bye default """
 cursor = db.cursor()
-cursor.execute("SELECT cities.id, cities.name, states.name FROM cities"
-               + " INNER JOIN states ORDER BY cities.id")
+cursor.execute("SELECT cities.id, cities.name, states.name FROM cities" +
+" INNER JOIN states ON cities.state_id = states.id ORDER BY cities.id ")
 """ we only select cities id first and then cities name and states names"""
 result = cursor.fetchall()
 for i in result:
