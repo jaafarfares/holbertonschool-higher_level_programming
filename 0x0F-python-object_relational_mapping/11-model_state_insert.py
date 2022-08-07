@@ -17,7 +17,7 @@ if __name__ == "__main__":
     neww = State(name="Louisiana")
     session.add(neww)
     session.commit()
-    print(newww.id)
+    print(neww.id)
     session.close()
 
     """ finaly lets close the session """
