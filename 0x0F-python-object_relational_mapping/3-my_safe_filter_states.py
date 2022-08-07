@@ -12,15 +12,15 @@ if __name__ == "__main__":
     )
     """ i didnt assgin the *host value and the *port value in the arguments
     cuz they will be ther bye default """
-cursor = db.cursor()
-naame = "SELECT * FROM states WHERE Name = %s ORDER BY id"
-cursor.execute(naame, (argv[4], ))
-result = cursor.fetchall()
-for i in result:
-    if i[1] == argv[4]:
-        """ lets loop through the states that starts with *N """
-        print(i)
-cursor.close()
-""" we have to close the cursor"""
-db.close()
-""" and finally close the database"""
+    cursor = db.cursor()
+    naame = "SELECT * FROM states WHERE Name = %s ORDER BY id"
+    cursor.execute(naame, (argv[4], ))
+    result = cursor.fetchall()
+    for i in result:
+        if i[1] == argv[4]:
+            """ lets loop through the states that starts with *N """
+            print(i)
+    cursor.close()
+    """ we have to close the cursor"""
+    db.close()
+    """ and finally close the database"""
