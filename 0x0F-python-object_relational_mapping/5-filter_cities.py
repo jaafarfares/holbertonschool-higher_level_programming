@@ -12,16 +12,16 @@ if __name__ == "__main__":
     )
     """ i didnt declare the *host and the *port arguments
     cuz they will be ther bye default """
-cities = []
-cursor = db.cursor()
-lists = """SELECT cities.id, cities.name, states.name
-    FROM cities INNER JOIN states ON cities.state_id = states.id
-    WHERE states.name=%s
-    ORDER BY id"""
-cursor.execute(lists, (argv[4], ))
-results = cursor.fetchall()
-for city in results:
-    cities.append(city[1])
-print(', '.join(cities))
-cursor.close()
-db.close()
+    cities = []
+    cursor = db.cursor()
+    lists = """SELECT cities.id, cities.name, states.name
+        FROM cities INNER JOIN states ON cities.state_id = states.id
+        WHERE states.name=%s
+        ORDER BY id"""
+    cursor.execute(lists, (argv[4], ))
+    results = cursor.fetchall()
+    for city in results:
+        cities.append(city[1])
+    print(', '.join(cities))
+    cursor.close()
+    db.close()
