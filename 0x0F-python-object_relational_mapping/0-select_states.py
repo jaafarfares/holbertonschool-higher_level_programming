@@ -14,13 +14,13 @@ if __name__ == "__main__":
     )
     """ i didnt declare the *host and the *port arguments
     cuz they will be ther bye default """
-cursor = db.cursor()
-cursor.execute("SELECT * FROM states ORDER BY id")
-result = cursor.fetchall()
-for i in result:
-    """ lets loop through the states"""
-    print(i)
-cursor.close()
-""" we have to close the cursor"""
-db.close()
-""" and finally close the database"""
+    cursor = db.cursor()
+    cursor.execute("SELECT * FROM states ORDER BY id")
+    result = cursor.fetchall()
+    for i in result:
+        """ lets loop through the states"""
+        print(i)
+    cursor.close()
+    """ we have to close the cursor"""
+    db.close()
+    """ and finally close the database"""
