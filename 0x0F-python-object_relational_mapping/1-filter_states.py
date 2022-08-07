@@ -17,7 +17,8 @@ if __name__ == "__main__":
     result = cursor.fetchall()
     for i in result:
         if i[1][0] == "N":
-            """ lets loop through the states and print the once that starts with *N """
+            """ lets loop through the states and print the once
+            that starts with *N """
             print(i)
     cursor.close()
     """ we have to close the cursor"""
