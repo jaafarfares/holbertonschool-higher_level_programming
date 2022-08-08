@@ -15,14 +15,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    stmt = (
-    update(State).
-    where(id == 2).
-    values(name='New Mexico')
-)
+    stmt = session.query(State).filter(State.id == 2).first()
+    stmt.name = "New Mexico"
     session.add(stmt)
     session.commit()
-    print(stmt.id)
     session.close()
-
     """ finaly lets close the session """
