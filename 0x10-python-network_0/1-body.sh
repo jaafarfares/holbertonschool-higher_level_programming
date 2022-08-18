@@ -1,3 +1,3 @@
 #!/bin/bash
 # get only body of a 200 status code response
-curl -sL GET "%{http_code}\n" "$1"
+curl -sL GET "$1"
