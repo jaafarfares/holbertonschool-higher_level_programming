@@ -2,7 +2,6 @@
 """
 fetch an url using urlllib package was fun!
 """
-from contextlib import contextmanager
 import urllib
 import urllib.request
 
