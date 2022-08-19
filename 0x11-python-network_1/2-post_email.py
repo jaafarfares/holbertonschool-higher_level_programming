@@ -3,7 +3,6 @@
 sends a POST request to the passed URL with the email as a parameter
 """
 import urllib.parse
-import urllib
 import urllib.request
 from sys import argv
 
