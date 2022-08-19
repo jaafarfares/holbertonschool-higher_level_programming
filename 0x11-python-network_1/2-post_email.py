@@ -17,3 +17,4 @@ if __name__ == '__main__':
     with r.urlopen(req) as res:
         body = res.read().decode('utf-8')
         print(body)
+        
