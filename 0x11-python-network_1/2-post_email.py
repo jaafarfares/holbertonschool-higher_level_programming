@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-sends a POST request to the passed URL with the email as a parameter
+sends a POST request to the passed URL with the email
 """
 import urllib.parse
 import urllib.request
@@ -8,13 +8,12 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    maill = {
-        'email': argv[2]
-    }
-    data = p.urlencode(maill)
+    ur = argv[1]
+    maiil = {
+            'email': argv[2]
+        }
+    data = urllib.parse.urlencode(maiil)
     data = data.encode('ascii')
-    req = r.Request(argv[1], data)
-    with r.urlopen(req) as res:
-        body = res.read().decode('utf-8')
-        print(body)
-        
+    al = urllib.request(ur, data)
+    with urllib.request.urlopen(al) as f:
+        print(i.read().decode('utf-8'))
