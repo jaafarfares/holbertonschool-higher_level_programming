@@ -4,7 +4,6 @@ displays the value of the X-Request-Id
 """
 from sys import argv
 import urllib
-import urllib.request
 
 
 with urllib.request.urlopen(argv[1]) as f:
