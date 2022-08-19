@@ -8,12 +8,12 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    ur = argv[1]
-    maiil = {
-            'email': argv[2]
-        }
-    data = urllib.parse.urlencode(maiil)
+    maill = {
+        'email': argv[2]
+    }
+    data = p.urlencode(maill)
     data = data.encode('ascii')
-    al = urllib.request(ur, data)
-    with urllib.request.urlopen(al) as f:
-        print(i.read().decode('utf-8'))
+    req = r.Request(argv[1], data)
+    with r.urlopen(req) as res:
+        body = res.read().decode('utf-8')
+        print(body)
