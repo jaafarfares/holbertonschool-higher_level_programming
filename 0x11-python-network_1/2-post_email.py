@@ -14,6 +14,6 @@ if __name__ == '__main__':
         }
     data = urllib.parse.urlencode(maiil)
     data = data.encode('ascii')
-    al = urllib.request.Request(ur, data)
+    al = urllib.request(ur, data)
     with urllib.request.urlopen(al) as f:
         print(i.read().decode('utf-8'))
