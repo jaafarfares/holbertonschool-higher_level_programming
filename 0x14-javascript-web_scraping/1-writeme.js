@@ -1,10 +1,7 @@
 #!/usr/bin/node
-const f = require('fs');
-
-f.writeFile(process.argv[2], process.argv[3], 'utf8', (err, content) => {
+const fs = require('fs');
+fs.writeFile(process.argv[2], argv[3], 'utf-8', function (err) {
   if (err) {
-    console.error(err);
-    return;
+    console.log(err);
   }
-  console.log(content);
 });
